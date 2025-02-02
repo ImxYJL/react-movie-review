@@ -479,7 +479,7 @@ Error generating stack: `+u.message+`
   button {
     font-size: 1.4rem;
   }
-`,P0=({error:i,resetErrorBoundary:s})=>j.jsxs(C0,{children:[j.jsx("p",{children:i.message}),j.jsx("button",{type:"button",onClick:s,children:"다시 시도하기"})]});function R0(){return j.jsxs("div",{style:A0,children:[j.jsx(k0,{}),j.jsx(rv,{children:({reset:i})=>j.jsx(E0,{fallback:P0,resetQueryError:i,children:j.jsx("main",{children:j.jsx(c0,{})})})})]})}const A0={paddingBottom:"48px"},M0=()=>ia`
+`,P0=({error:i,resetErrorBoundary:s})=>j.jsxs(C0,{children:[j.jsx("p",{children:i.message}),j.jsx("button",{type:"button",onClick:s,children:"다시 시도하기"})]}),R0=({children:i})=>j.jsx(rv,{children:({reset:s})=>j.jsx(E0,{fallback:P0,resetQueryError:s,children:i})});function A0(){return j.jsx("div",{style:M0,children:j.jsxs(R0,{children:[j.jsx(k0,{}),j.jsx("main",{children:j.jsx(c0,{})})]})})}const M0={paddingBottom:"48px"},T0=()=>ia`
   html,
   body,
   div,
@@ -604,8 +604,8 @@ Error generating stack: `+u.message+`
     border-collapse: collapse;
     border-spacing: 0;
   }
-`,T0=()=>ia`
-  ${M0()}
+`,N0=()=>ia`
+  ${T0()}
 
   * {
     box-sizing: border-box !important;
@@ -628,4 +628,4 @@ Error generating stack: `+u.message+`
   button {
     cursor: pointer;
   }
-`;async function N0(){const{worker:i}=await Gm(async()=>{const{worker:s}=await import("./browser-xpl1MWRU.js");return{worker:s}},[]);return i.start({serviceWorker:{url:"mockServiceWorker.js"}})}const O0=new Yg({defaultOptions:{queries:{throwOnError:!0,refetchOnWindowFocus:!1,retry:1},mutations:{throwOnError:!0}}});N0().then(()=>{ry.createRoot(document.getElementById("root")).render(j.jsx(ie.StrictMode,{children:j.jsxs(ev,{client:O0,children:[j.jsx(Gy,{styles:T0}),j.jsx(R0,{})]})}))});
+`;async function O0(){const{worker:i}=await Gm(async()=>{const{worker:s}=await import("./browser-xpl1MWRU.js");return{worker:s}},[]);return i.start({serviceWorker:{url:"mockServiceWorker.js"}})}const _0=new Yg({defaultOptions:{queries:{throwOnError:!0,refetchOnWindowFocus:!1,retry:1},mutations:{throwOnError:!0}}});O0().then(()=>{ry.createRoot(document.getElementById("root")).render(j.jsx(ie.StrictMode,{children:j.jsxs(ev,{client:_0,children:[j.jsx(Gy,{styles:N0}),j.jsx(A0,{})]})}))});
